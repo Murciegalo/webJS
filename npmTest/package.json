@@ -20,6 +20,11 @@
   },
   "dependencies": {
     "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "webpack": "^4.21.0"
+  },
+  "scripts": {
+  "build": "webpack --progress --hide-modules",
+  "watch": "webpack --watch --progress --hide-modules"
   }
 }
