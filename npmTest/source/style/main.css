@@ -1,0 +1,16 @@
+.div .element {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body {
+  background: red;
+}
+
+body h1 {
+  color: blue;
+}

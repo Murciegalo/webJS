@@ -1,0 +1,25 @@
+{
+  "name": "deploymentkit",
+  "version": "1.0.0",
+  "description": "frontend ready to go",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "webpack"
+  ],
+  "author": "Raul",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.9.4"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1"
+  }
+}
