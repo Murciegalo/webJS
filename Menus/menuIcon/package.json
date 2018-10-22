@@ -1,0 +1,26 @@
+{
+  "name": "menuicon",
+  "version": "1.0.0",
+  "description": "readyToGoKit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raul",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.9.4",
+    "sass": "^1.14.3"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "webpack": "^4.22.0"
+  },
+  "scripts": {
+      "build" : "webpack --progress --hide-modules",
+      "watch": "webpack --watch --progress --hide-modules"
+  }
+}

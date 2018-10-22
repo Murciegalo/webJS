@@ -1,4 +1,4 @@
-Globally install JUST npm & nodejs from repository
+	Globally install JUST npm & nodejs from repository
 
 *Installing node.js from repository (best way so I can update regularly when using command apt)
 wget -qO- https://deb.nodesource.com/setup_10.x | sudo -E bash -
@@ -82,7 +82,7 @@ GULP TASKS TO BE ACCOMMODATED:
 				1. browsersync.io/docs
 				2. First, you'll need to install Browsersync & Gulp as development dependencies.
 		
-					npm install browser-sync //gulp --save-dev
+					npm install browser-sync --save-dev
 			
 				3. Then, use them within your gulpfile.js:
 
@@ -100,16 +100,22 @@ GULP TASKS TO BE ACCOMMODATED:
 						   gulp.watch(['**/*.html' , 'dist/*.css']).on('change' , browserSync.reload);
 						});
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WEBPACK
+				1. npm install webpack
+				2. webpack.config.js
 					
+				3. package.json
+
+					"scripts": {
+					      "build" : "webpack --progress --hide-modules",
+					      "watch": "webpack --watch --progress"
+					  }
+
+				4. npm run build
+
 ---------------------------------------------------FIRST OWN PACKAGE FOR FRONT END DEVELOPMENT, (REACT & REDUX TO BE ADDED)--------------------------------------------------------------------------
 
 
-- LODASH
 
-					1. npm install lodash --save >>>>	My package.json will now contain its first dependency>>>>> "dependencies":{
-																		"lodash": "^2.4.1" 
-																			}
-
-
-
-																		
