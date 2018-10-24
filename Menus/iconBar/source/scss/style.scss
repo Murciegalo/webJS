@@ -46,3 +46,43 @@ h1{
     i.active{  background-color: #4CAF50;}//Links end
   }
 }
+//----------------------------------------------
+// ANIMATED MENU ICON
+.animatedMenu{
+  width: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+  .class1{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .class2{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .class3{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }  // BLACK BARS FROM MENU ICON ENDS HERE
+}
+//-------------JS to be applied
+.change{
+  .class1{
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  .class2{
+    opacity: 0;
+  }
+  .class3{
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+}
