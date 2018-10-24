@@ -86,3 +86,42 @@ h1{
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
 }
+//----------------------------ACCORDION BUTTONS----
+.accordeon{
+  .accordion{
+    width: 100%;
+    border: none;
+    background-color: #EEEEEE;
+    text-align: left;
+    font-size: 16px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .accordion:hover{
+      background-color: #CCCCCC;   //nav effects
+  }
+  // HOVER EFFECT
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+// AFTER SIGN INPUT
+  .panel{
+    padding: 0 18px;
+    background-color: white;
+    display: none;  //remove from DOM
+    overflow: hidden;
+  }
+  // PANELS hidden STYLES
+  .active{
+    background-color: #CCCCCC;    //nav effects
+  }
+  .active:after{
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+}
+//------------------------------

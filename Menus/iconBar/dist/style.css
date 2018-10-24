@@ -130,3 +130,44 @@ h1 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
           transform: rotate(45deg) translate(-8px, -8px);
 }
+
+.accordeon .accordion {
+  width: 100%;
+  border: none;
+  background-color: #EEEEEE;
+  text-align: left;
+  font-size: 16px;
+  padding: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.accordeon .accordion:hover {
+  background-color: #CCCCCC;
+}
+
+.accordeon .accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordeon .panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordeon .active {
+  background-color: #CCCCCC;
+}
+
+.accordeon .active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
