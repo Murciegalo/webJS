@@ -23,7 +23,7 @@ gulp.task('hi',function(){
 // });
 //SASS TASK
 gulp.task('sass', () => {
-    gulp.src('scss/**/*.scss')
+    gulp.src('source/scss/**/*.scss')
                       //not a compressed version    if error, show me
          .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 //Once you compilce scss into css , apply autoprefixer on them versions
@@ -39,7 +39,7 @@ gulp.task('watch', () => {
         notify: false
     });
         //run it if anything changes
-   gulp.watch('scss/**/*.scss', ['sass']) //I'll work here
+   gulp.watch('source/scss/**/*.scss', ['sass']) //I'll work here
       // After you detect & update changes on *.scss files, please update    browser and CSS files (read-only browsers)
    gulp.watch(['**/*.html' , 'dist/*.css']).on('change' , browserSync.reload);
 });

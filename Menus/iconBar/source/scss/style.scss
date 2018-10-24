@@ -1,0 +1,48 @@
+.div {
+  .element {
+    background: grey;
+    display: flex;
+  }
+}
+h1{
+  color: grey;
+  display: flex;
+  justify-content: center;
+}
+.menu{
+  display: flex;
+  .vertical{
+    width: 30%;
+    max-width: 30%;
+        i{
+          width: 80px;
+          height: 80px;
+          background-color: #555555;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 35px;
+          color: white;
+          padding: 5px;
+        }
+        i:hover{  background-color: black;}
+        i.active{  background-color: #4CAF50;}//Links end
+    } //VERTICAL MENU
+//----------------------------------------------
+  .horitzontal{
+    display: flex;
+    i{
+      width: 80px;
+      height: 80px;
+      background-color: #555555;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      color: white;
+      padding: 5px;
+    }
+    i:hover{  background-color: black;}
+    i.active{  background-color: #4CAF50;}//Links end
+  }
+}
