@@ -1,0 +1,53 @@
+* ,
+body{
+  box-sizing: border-box;
+  h1{
+    color: blue;
+    text-align: center;
+    padding: 20px;
+  }
+}
+.main{
+  display: flex;
+  border: 1px solid #bbb;
+  .list{
+    width: 20%;
+    background-color: #BBBBBB;
+    input{
+      max-width: 100%;
+      width: 100%;
+      font-size: 18px;
+      padding: 15px;
+      border-radius: 0;
+      margin-top: 50px;
+    } //SEARCH BOX
+    ul{
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      li{
+        a{
+          display: block;
+          padding:15px 15px 25px 15px;
+          text-decoration: none;
+          color: #000;
+        }  //LINKS
+        a:hover{
+          background-color: #eee;
+        }  //LINKS ON HOVER
+      }
+    } //LIST ENDS HERE
+  }  //SEARCH-SECTION ENDS
+  .right{
+    width: 80%;
+    padding: 20px;
+    h2{
+      font-size: 28px;
+      padding: 30px;
+    }
+    p{
+      padding-left: 30px;
+    }
+  }
+}
+//-------------------------JS to be applied now---------
