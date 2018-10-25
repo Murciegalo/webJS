@@ -1,0 +1,44 @@
+body{
+  // background-color: yellow;
+  h1{
+    font-size: 20px;
+    color: red;
+    display: flex;
+    justify-content: center;
+  }
+}
+.tab{
+  max-width: 100%;
+  background-color: #F1F1F1;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  .tablinks{
+  padding: 20px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+  .tablinks:hover{
+    background-color: #ddd;
+  }
+  .tablinks{
+    .active{  background-color: #ccc;
+             }
+  }  //STYLES FOR .ACTIVE WITHIN TABLINKS
+}
+.tabcontent{
+  display: none;
+  padding: 20px;
+} //TAB CONTENT TO BE DISPLAYED WHEN .ACTIVE CLICKED
+.active{
+  display: block;
+  animation: fadeEffect 2s;
+}//---------------------------------
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+//---------------------------------------------------------------

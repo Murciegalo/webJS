@@ -1,0 +1,64 @@
+body h1 {
+  font-size: 20px;
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tab {
+  max-width: 100%;
+  background-color: #F1F1F1;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.tab .tablinks {
+  padding: 20px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tab .tablinks:hover {
+  background-color: #ddd;
+}
+
+.tab .tablinks .active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+}
+
+.active {
+  display: block;
+  -webkit-animation: fadeEffect 2s;
+          animation: fadeEffect 2s;
+}
+
+/* Go from zero to full opacity */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
