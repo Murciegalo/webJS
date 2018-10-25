@@ -1,5 +1,6 @@
 body{
   // background-color: yellow;
+  box-sizing: border-box;
   h1{
     font-size: 20px;
     color: red;
@@ -35,10 +36,57 @@ body{
 .active{
   display: block;
   animation: fadeEffect 2s;
-}//---------------------------------
+}
+//---------------------------------
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-//---------------------------------------------------------------
+// ANIMATED TABS END
+//---------------------------------------------------------------------
+.tabcontentI{
+  display: none;
+  max-width: 100%;
+  height: 300px;
+  max-height: auto;
+  h2{
+    text-align: center;
+    padding: 70px 0px 20px 0px;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+  }
+  p{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
+}
+.activeI{
+  display: block;
+}
+#Madrid{
+  background-color: red;
+}
+#Abu-Dhabi{
+  background-color: green;
+}
+#Rome{
+  background-color:blue;
+}
+#Oslo{
+  background-color: orange;
+}
+.tablinkI{
+  max-width: 25%;
+  width: 25%;
+  float: left;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.tablinkI:hover {
+    background-color: #999;
+}

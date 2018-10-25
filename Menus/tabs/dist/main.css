@@ -1,3 +1,8 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body h1 {
   font-size: 20px;
   color: red;
@@ -61,4 +66,59 @@ body h1 {
   to {
     opacity: 1;
   }
+}
+
+.tabcontentI {
+  display: none;
+  max-width: 100%;
+  height: 300px;
+  max-height: auto;
+}
+
+.tabcontentI h2 {
+  text-align: center;
+  padding: 70px 0px 20px 0px;
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+
+.tabcontentI p {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+.activeI {
+  display: block;
+}
+
+#Madrid {
+  background-color: red;
+}
+
+#Abu-Dhabi {
+  background-color: green;
+}
+
+#Rome {
+  background-color: blue;
+}
+
+#Oslo {
+  background-color: orange;
+}
+
+.tablinkI {
+  max-width: 25%;
+  width: 25%;
+  float: left;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tablinkI:hover {
+  background-color: #999;
 }
