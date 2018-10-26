@@ -1,16 +1,65 @@
-.div .element {
-  background: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
+*,
 body {
-  background: red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
 }
 
-body h1 {
-  color: blue;
+* #porkyPo,
+body #porkyPo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  margin: 20px, 20px, 20px, 200px;
+  cursor: pointer;
+}
+
+* .sidenav,
+body .sidenav {
+  position: fixed;
+  height: 100%;
+  width: 0;
+  background-color: #111111;
+  overflow-x: hidden;
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+}
+
+* .sidenav a,
+body .sidenav a {
+  color: grey;
+  text-decoration: none;
+  display: block;
+  font-family: monospace;
+  font-size: 28px;
+  padding: 20px 0px 20px 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+* .sidenav a:hover,
+body .sidenav a:hover {
+  color: white;
+  font-weight: 600;
+}
+
+* .sidenav #closebtn,
+body .sidenav #closebtn {
+  width: 30px;
+  height: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  left: 160px;
+  font-size: 50px;
+}
+
+* #main,
+body #main {
+  padding: 20px;
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
 }
