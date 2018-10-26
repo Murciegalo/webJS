@@ -1,16 +1,38 @@
-.div .element {
-  background: #000;
+*,
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* #navbar,
+body #navbar {
+  background-color: #333333;
+  position: fixed;
+  width: 100%;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  top: -60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-body {
-  background: red;
+* #navbar a,
+body #navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
 }
 
-body h1 {
-  color: blue;
+* .main,
+body .main {
+  display: block;
+  padding-top: 70px;
+}
+
+* .main p,
+body .main p {
+  font-size: 30px;
+  padding: 20px;
 }

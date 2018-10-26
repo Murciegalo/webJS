@@ -1,13 +1,26 @@
-.div {
-  .element{
-    background: #000;
-    display: flex;
-    justify-content: space-around;
-  }
-}
+*,
 body{
-  background: red;
-  h1{
-    color: blue;
+  margin: 0;
+  box-sizing: border-box;
+  #navbar{
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
+    top: -60px;
+    display: flex;
+    a{
+      text-decoration: none;
+      color: white;
+      padding: 20px;
+    }
+  }
+  .main{
+    display: block;
+    padding-top: 70px;
+    p{
+      font-size: 30px;
+      padding: 20px;
+    }
   }
 }
