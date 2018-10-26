@@ -54,7 +54,7 @@ SASS & GULP DEPENDENCIES:		npm install node-sass gulp-sass --save-dev	&& npm ins
 GULP TASKS TO BE ACCOMMODATED:
 
 - AUTOPREFIXER:				1. npm install --save-dev gulp-autoprefixer									2. autoprefixer = require('gulp-autoprefixer');
-					On GULP : const autoprefixer = require('gulp-autoprefixer'); and now I got require... I may implement the TASK: 3. gulp.task('default', () =>
+												     and now I got require... I may implement the TASK: 3. gulp.task('default', () =>
 																			    gulp.src('src/app.css')
 																				.pipe(autoprefixer({
 																				    browsers: ['last 2 versions'],
@@ -83,8 +83,10 @@ GULP TASKS TO BE ACCOMMODATED:
 				2. First, you'll need to install Browsersync & Gulp as development dependencies.
 		
 					npm install browser-sync //gulp --save-dev
-			
+				
 				3. Then, use them within your gulpfile.js:
+					
+					browserSync = require('browser-sync').create();
 
 					//WATCH FOR ME MATE , PLEASE
 						gulp.task('watch', () => {
