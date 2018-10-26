@@ -28,7 +28,7 @@ gulp.task( 'watch', () =>{
             });
           //run it if anything changes
            gulp.watch('src/scss/**/*.scss', ['sass']) //I'll work here
-           gulp.watch('src/app/**/*.js', ['js-watch'])
+           // gulp.watch('src/app/**/*.js', ['js-watch'])
               // After you detect & update changes on *.scss files, please update browser and CSS files (read-only browsers)
            gulp.watch(['**/*.html' , 'dist/*.css' , 'dist/*.js']).on('change' , browserSync.reload);
 })
