@@ -43,10 +43,22 @@ body{
   float: right;
   padding-right: 20px;
 }
-// Add responsiveness
+main{
+  padding-top: 280px;
+  text-align: center;
+  p{
+    font-family: fantasy;
+    font-size: 30px;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+// responsiveness Queries
 @media screen and (max-width: 580px) {
   #navbar {
-    padding: 20px 10px !important; 
+    padding: 20px 10px !important;
   }
   #navbar a {
     float: none;
