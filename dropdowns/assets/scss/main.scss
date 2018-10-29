@@ -16,7 +16,7 @@ body{
       padding: 20px;
       color: white;
     }
-    .dropdown{
+    .dropdown, .dropDown2{
       float: left;
       button{
         padding: 20px;
@@ -27,7 +27,7 @@ body{
         font-weight: 400;
         font-size: 18px;
       }
-      .dropdown-content{
+      .dropdown-content, .row{
         display: none;
         position: absolute;
         background-color: #333;
@@ -36,6 +36,11 @@ body{
           display: block !important;
           padding: 20px 42px 20px 20px;
         }
+        .column{
+          float: left;
+          h3{font-size: 18px; color: white; padding: 20px;}
+        }
+        h3:hover{text-decoration-style: underline; cursor: pointer;}
       } //section to be dropped down ends here
     } //dropdown enclosing dropped menu ends here
     .icon{
@@ -56,9 +61,13 @@ body{
   .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
   }
+  .dropDown2:hover .dropbtn{background-color: red;}
 //SHOW MENU DROPPED DOWN ON HOVER
   .dropdown:hover .dropdown-content {
   display: block;
+  }
+  .dropDown2:hover .row{
+    display: block;
   }
 }
 // BODY ENDS HERE
@@ -70,7 +79,7 @@ body{
     display: block;
     float: left;
   }
-  .navbar a:not(:first-child), .dropdown , dropbtn{
+  .navbar a:not(:first-child), .dropdown, .dropDown2 , .dropbtn{
     display: none;
   }
   .navbar a.icon{
@@ -91,12 +100,12 @@ body{
     display: block;
     text-align: left;
   }
-  .navbar.responsive .dropdown {
+  .navbar.responsive .dropdown{
     float: none;
     display: flex;
     justify-content: flex-end;}
   // .navbar.responsive .dropdown-content {position: relative;}
-  .navbar.responsive .dropdown .dropbtn {
+  .navbar.responsive .dropdown .dropbtn{
     display: block;
     width: 100%;
     text-align: left;
