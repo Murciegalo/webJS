@@ -1,0 +1,39 @@
+//drop up option
+.dropup{
+  margin-top: 200px;
+  position: relative;    //for drop UP menu
+  .dropUpBtn{
+    padding: 20px;
+    background-color: #2980B9;
+    border: none;
+    font-size: 16px;
+    color: white;
+  }
+  .dropup-content{
+    position: absolute;
+    bottom: 60px;  //from bottom to stay on top of relative 'dropup can'
+    display: none;
+    a{
+      display: block;
+      padding: 20px;
+      background-color: lightblue;
+      font-size: 16px;
+      color: grey;
+      // font-weight: 600;
+      text-decoration: none;
+    }
+  }
+  .dropup-content:hover{
+    display: block;
+  }
+}
+/* Change color of dropup links on hover */
+.dropup-content a:hover {background-color: #ddd}
+/* Show dropup menu on hover */
+.dropup:hover .dropup-content {
+    display: block;
+}
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+    background-color: #2980B9;
+}
