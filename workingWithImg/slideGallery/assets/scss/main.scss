@@ -1,5 +1,71 @@
-*,
-body{
+*{
   box-sizing: border-box;
   margin: 0;
 }
+.container{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 1000px;
+  height: 350px;
+  .mySlides{
+    height: inherit;
+    display: none;
+    .numbertext{
+      position: absolute;
+      top: 0;
+      padding: 20px;
+      font-size: 12px;
+      color: white;
+    }
+  }
+  // SLIDER ENDS HERE
+  // ARROWS
+  .prev,
+  .next{
+    position: absolute;
+    top: 175px;
+    transform: translateY(-50%);  //rigth on middle Y
+    padding: 15px;
+    cursor: pointer;
+    width: auto;
+    max-width: auto;
+    font-size: 30px;
+    color: white;
+  }
+  .next{
+    right: 0;
+  }
+  //CAPTION FOR EACH IMG
+  .caption-container{
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }  //CAptions end here
+    .row{
+      overflow: hidden;
+      height: 120px;
+      .column{
+        float: left;
+        width: 16.66%;
+        height: inherit;
+  /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+      }  //OPACITY FOR IMAGES
+        .cursor{
+          cursor: pointer;
+        }  //POINTER CURSOR ON IMAGE FLOATED LIST
+    }
+  }
+  .row:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }  //CLEARFIX FOR FLOAT
+  .active{
+    display: block;
+  }
+}
+// CONTAINER ENDS HERE

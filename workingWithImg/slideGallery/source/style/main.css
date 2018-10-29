@@ -1,65 +1,81 @@
-*,
-body {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
 }
 
-* #porkyPo,
-body #porkyPo {
+.container {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 1000px;
+  height: 350px;
+}
+
+.container .mySlides {
+  height: inherit;
+  display: none;
+}
+
+.container .mySlides .numbertext {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  margin: 20px, 20px, 20px, 200px;
+  top: 0;
+  padding: 20px;
+  font-size: 12px;
+  color: white;
+}
+
+.container .prev,
+.container .next {
+  position: absolute;
+  top: 175px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 15px;
+  cursor: pointer;
+  width: auto;
+  max-width: auto;
+  font-size: 30px;
+  color: white;
+}
+
+.container .next {
+  right: 0;
+}
+
+.container .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.container .row {
+  overflow: hidden;
+  height: 120px;
+}
+
+.container .row .column {
+  float: left;
+  width: 16.66%;
+  height: inherit;
+  /* Add a transparency effect for thumnbail images */
+}
+
+.container .row .column .demo {
+  opacity: 0.6;
+}
+
+.container .row .column .cursor {
   cursor: pointer;
 }
 
-* .sidenav,
-body .sidenav {
-  position: fixed;
-  height: 100%;
-  width: 0;
-  background-color: #111111;
-  overflow-x: hidden;
-  -webkit-transition: 0.6s ease-out;
-  transition: 0.6s ease-out;
+.container .row:after {
+  content: " ";
+  display: table;
+  clear: both;
 }
 
-* .sidenav a,
-body .sidenav a {
-  color: grey;
-  text-decoration: none;
+.container .active {
   display: block;
-  font-family: monospace;
-  font-size: 28px;
-  padding: 20px 0px 20px 30px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-* .sidenav a:hover,
-body .sidenav a:hover {
-  color: white;
-  font-weight: 600;
-}
-
-* .sidenav #closebtn,
-body .sidenav #closebtn {
-  width: 30px;
-  height: 50px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  font-weight: 500;
-  position: relative;
-  left: 160px;
-  font-size: 50px;
-}
-
-* #main,
-body #main {
-  padding: 20px;
-  -webkit-transition: 0.6s ease-out;
-  transition: 0.6s ease-out;
 }
