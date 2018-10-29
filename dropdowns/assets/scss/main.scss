@@ -1,0 +1,103 @@
+*,
+body{
+  box-sizing: border-box;
+  margin: 0;
+  .navbar{
+    // display: flex;
+    background-color: #333;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 18px;
+    a{
+      float: left;
+      display: block;
+      text-decoration: none;
+      padding: 20px;
+      color: white;
+    }
+    .dropdown{
+      float: left;
+      button{
+        padding: 20px;
+        border: none;
+        background-color: #333;
+        color: white;
+        font-family: monospace;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #333;
+        a{
+          float: none;
+          display: block !important;
+          padding: 20px 42px 20px 20px;
+        }
+      } //section to be dropped down ends here
+    } //dropdown enclosing dropped menu ends here
+    .icon{
+      display: none;
+    }
+  } //nav ends here
+  // NAV ENDS HERE
+  .navbar:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+// CLEARFIX FOR NAV BAR AFTER FLOAT
+
+// HOVERS
+  .navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  }
+//SHOW MENU DROPPED DOWN ON HOVER
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+}
+// BODY ENDS HERE
+
+//RESPONSIVE QUERY WITH JS
+@media screen and (max-width: 600px) {
+  .navbar{
+    width: 100%;
+    display: block;
+    float: left;
+  }
+  .navbar a:not(:first-child), .dropdown , dropbtn{
+    display: none;
+  }
+  .navbar a.icon{
+    display: block;
+    float: right;
+  }
+}
+//2nd media query
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon { //keeping menu in right side
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .dropdown {
+    float: none;
+    display: flex;
+    justify-content: flex-end;}
+  // .navbar.responsive .dropdown-content {position: relative;}
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
