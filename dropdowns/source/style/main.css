@@ -1,6 +1,7 @@
 .dropup {
   margin-top: 200px;
   position: relative;
+  width: 100px;
 }
 
 .dropup .dropUpBtn {
