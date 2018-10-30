@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+//DISPLAYED GALLERY
+.row{
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  .column1{
+    float: left;
+    width: 16%;
+    height: 100px;
+    padding: 5px;
+    // IMG styles
+    img{width: 100%; height: 100%; transition: 0.3s;}  //BELOW HOVER IMGs
+    img:hover{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      cursor: pointer;
+    }
+  }
+}
+row:after{
+  content: ' ';
+  display: table;
+  clear: both;
+}
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  .close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+// HOVER ON CLOSE
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgba(50, 50, 50, .8); //button effect
+  padding: 5px;
+}
+  .modal-content{
+    position: relative;
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  .mySlides{
+    height: 420px;
+    display: none;
+    .numbertext{
+      position: absolute;
+      top: 0;
+      padding: 20px;
+      font-size: 14px;
+      // font-weight: bold;
+      color: white;
+    }
+    img{width: 100%;}
+  }
+  // SLIDER ENDS HERE
+  // ARROWS
+  .prev,
+  .next{
+    position: absolute;
+    top: 175px;
+    transform: translateY(-50%);  //rigth on middle Y
+    padding: 15px;
+    cursor: pointer;
+    width: auto;
+    max-width: auto;
+    font-size: 40px;
+    color: white;
+  }
+  .next{
+    right: 0;
+  }
+  // HOVER FOR ARROWS
+  .prev:hover{  background-color: rgba(0, 0, 0, 0.8);}
+  .next:hover{  background-color: rgba(0, 0, 0, 0.8);}
+  //CAPTION FOR EACH IMG
+  .caption-container{
+    border-top: 1px solid white;
+    text-align: center;
+    background-color: #222;
+    padding: 20px;
+    color: white;
+  }
+  //CAptions end here
+      .column{
+        float: left;
+        width: 16.66%;
+        height: inherit;
+        img{width: 100%; height: 100%;}
+  /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+      }  //OPACITY FOR IMAGES
+        .cursor{
+          cursor: pointer;
+        }  //POINTER CURSOR ON IMAGE FLOATED LIST
+        .active,
+        .demo:hover{opacity: 1;}
+      } //COLUMNS DIVISION ENDS HERE
+  .column:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }  //CLEARFIX FOR FLOATED DIVISION (COLUMNS)
+}
+// CONTAINER ENDS HERE

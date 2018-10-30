@@ -1,0 +1,159 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.row {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.row .column1 {
+  float: left;
+  width: 16%;
+  height: 100px;
+  padding: 5px;
+}
+
+.row .column1 img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.row .column1 img:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+row:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal .close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgba(50, 50, 50, 0.8);
+  padding: 5px;
+}
+
+.modal .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.modal .mySlides {
+  height: 420px;
+  display: none;
+}
+
+.modal .mySlides .numbertext {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.modal .mySlides img {
+  width: 100%;
+}
+
+.modal .prev,
+.modal .next {
+  position: absolute;
+  top: 175px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 15px;
+  cursor: pointer;
+  width: auto;
+  max-width: auto;
+  font-size: 40px;
+  color: white;
+}
+
+.modal .next {
+  right: 0;
+}
+
+.modal .prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal .caption-container {
+  border-top: 1px solid white;
+  text-align: center;
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.modal .column {
+  float: left;
+  width: 16.66%;
+  height: inherit;
+  /* Add a transparency effect for thumnbail images */
+}
+
+.modal .column img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal .column .demo {
+  opacity: 0.6;
+}
+
+.modal .column .cursor {
+  cursor: pointer;
+}
+
+.modal .column .active,
+.modal .column .demo:hover {
+  opacity: 1;
+}
+
+.modal .column:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
