@@ -1,5 +1,5 @@
 console.log('works');
-//p0
+//p0 Position 0 by default
 let slideIndex = 1;
 const showSlides = (n) =>{
   //all imgs in an array
@@ -25,7 +25,14 @@ const showSlides = (n) =>{
 }
 showSlides(slideIndex);
 
+// FUNCTION FOR PREVIOUS/NEXT IMG PASSER
 const plusSlides = (n) =>{
   showSlides(slideIndex += n);
 }
 //--------------------------------
+// HANDLERS
+// ARROW FOR PREVIOUS PICTURE
+const prev = document.getElementById('prev').addEventListener('click', function(){ plusSlides(-1); }, false);
+// ARROW FOR NEXT PICTURE
+const next = document.getElementById('next').addEventListener('click', function(){ plusSlides(1); }, false);
+//--------------
