@@ -1,4 +1,5 @@
 console.log('works');
+//p0
 let slideIndex = 1;
 const showSlides = (n) =>{
   //all imgs in an array
@@ -7,9 +8,9 @@ const showSlides = (n) =>{
     const imgS = document.getElementsByClassName('demo');
   //captions to be added along with each img
     const captions = document.getElementById('caption');
-    //img selector > total imgs, starts again from the first one
-    if (n > stock.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = stock.length}
+    //img selector > total imgs, starts again from the first one *
+    if (n > stock.length) {slideIndex = 1} //starts from Begin *
+    if (n < 1) {slideIndex = stock.length} //starts from End *
   //hide all images with array1
     for (let i = 0;  i < stock.length; i++){
         stock[i].style.display = 'none';

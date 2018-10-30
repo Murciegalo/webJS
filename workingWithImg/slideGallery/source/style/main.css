@@ -43,6 +43,14 @@
   right: 0;
 }
 
+.container .prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .container .caption-container {
   text-align: center;
   background-color: #222;
