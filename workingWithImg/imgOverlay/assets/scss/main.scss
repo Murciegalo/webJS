@@ -1,0 +1,114 @@
+*,
+body{
+  box-sizing: border-box;
+  margin: 0;
+  h2{
+    text-align: center;
+    padding: 20px;
+  }
+  p{
+    text-align: center;
+    padding: 20px;
+  }
+}
+// 1
+.container{
+  margin: 20px;
+  position: relative;
+  width: 465px;
+  img{
+    display: block;
+    width: 465px;
+    max-width: 465px;
+    height: 465px;
+    max-height: 465px;
+    position: relative;
+  }
+  .overlay{
+    position: absolute; //relative to .container
+    // location
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // expanded
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+  }
+    .text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+      font-family: monospace, sans-serif;
+      font-size: 20px;
+      // font-weight: bold;
+      transition: .5s ease;
+      padding: 8px; //button
+      color: white;
+      background-color: green;
+      border: none;
+    }
+    .porco{ //2
+      display: none;
+    }
+  .overlay:hover{  //1
+    background-color: #008CBA;
+    .text{
+      color: white;
+    }
+  }
+  .overlay2{ //2
+    position: absolute; //relative to .container
+    // location
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // expanded
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+  }  //2
+  .overlay2:hover{
+    .porco{
+      display: block;
+    }
+  }
+}
+//3
+.container3 {
+  position: relative;
+  display: inline-block;
+}
+.image {
+  display: block;
+  width: 465px;
+  max-width: 465px;
+  height: 465px;
+  max-height: 465px;
+}
+.overlay3 {
+  position: absolute;
+  bottom: 100%; //to bottom
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0%; //come from top
+  transition: .5s ease;
+}
+.container3:hover .overlay3 {
+  bottom: 0; //coming to bottom on hover
+  height: 100%;
+}
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
