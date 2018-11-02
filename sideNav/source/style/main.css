@@ -5,61 +5,124 @@ body {
   margin: 0;
 }
 
-* #porkyPo,
-body #porkyPo {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  margin: 20px, 20px, 20px, 200px;
-  cursor: pointer;
+* h2,
+body h2 {
+  text-align: center;
+  margin: 20px;
 }
 
-* .sidenav,
-body .sidenav {
-  position: fixed;
-  height: 100%;
-  width: 0;
-  background-color: #111111;
-  overflow-x: hidden;
-  -webkit-transition: 0.6s ease-out;
-  transition: 0.6s ease-out;
+* p,
+body p {
+  text-align: center;
+  margin: 20px;
 }
 
-* .sidenav a,
-body .sidenav a {
-  color: grey;
-  text-decoration: none;
-  display: block;
-  font-family: monospace;
-  font-size: 28px;
-  padding: 20px 0px 20px 30px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+* .section1,
+body .section1 {
+  width: 400px;
+  max-width: 400px;
+  height: 300px;
+  max-height: auto;
+  margin: 30px auto;
 }
 
-* .sidenav a:hover,
-body .sidenav a:hover {
-  color: white;
-  font-weight: 600;
+* .section1 img:hover,
+body .section1 img:hover {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
-* .sidenav #closebtn,
-body .sidenav #closebtn {
-  width: 30px;
-  height: 50px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  font-weight: 500;
+.flip-box {
+  width: 300px;
+  height: 200px;
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin: 30px auto;
+}
+
+.flip-box .flip-box-inner {
   position: relative;
-  left: 160px;
-  font-size: 50px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.9s;
+  transition: -webkit-transform 0.9s;
+  transition: transform 0.9s;
+  transition: transform 0.9s, -webkit-transform 0.9s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
-* #main,
-body #main {
-  padding: 20px;
-  -webkit-transition: 0.6s ease-out;
-  transition: 0.6s ease-out;
+.flip-box .flip-box-front, .flip-box .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.flip-box .flip-box-back {
+  background-color: grey;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-box:hover .flip-box-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.section3 {
+  width: 400px;
+  max-width: 400px;
+  height: 300px;
+  max-height: auto;
+  margin: 30px auto;
+}
+
+.section3 img:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(10px, 10px) rotate(0deg);
+            transform: translate(10px, 10px) rotate(0deg);
+  }
+  25% {
+    -webkit-transform: translate(10px, 10px) rotate(-5deg);
+            transform: translate(10px, 10px) rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: translate(10px, 10px) rotate(5deg);
+            transform: translate(10px, 10px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: translate(10px, 10px) rotate(-5deg);
+            transform: translate(10px, 10px) rotate(-5deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(10px, 10px) rotate(0deg);
+            transform: translate(10px, 10px) rotate(0deg);
+  }
+  25% {
+    -webkit-transform: translate(10px, 10px) rotate(-5deg);
+            transform: translate(10px, 10px) rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: translate(10px, 10px) rotate(5deg);
+            transform: translate(10px, 10px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: translate(10px, 10px) rotate(-5deg);
+            transform: translate(10px, 10px) rotate(-5deg);
+  }
 }
