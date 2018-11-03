@@ -1,0 +1,67 @@
+*,
+body{
+  box-sizing: border-box;
+  margin: 0;
+  h2{ text-align: center; margin: 20px;}
+  p{ text-align: center; margin: 20px;}
+  .section1{
+    width: 400px;
+    max-width: 400px;
+    height: 300px;
+    max-height: auto;
+    margin: 30px auto;
+    img:hover {
+        transform: scaleX(-1); //flip img upside down (on X axis)
+    }
+  }
+}
+//TRANSFORM ROTATE EFFECTS 2
+.flip-box{
+    width: 300px;
+    height: 200px;
+    background-color: transparent;
+    border: 1px solid #f1f1f1; //to appreciate effect
+    perspective: 1000px; //3D effect  //*
+    margin: 30px auto;
+    .flip-box-inner{ //just to relative pos for next
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.9s;  //effect to be applied in this div
+      transform-style: preserve-3d;  //*
+    }
+    .flip-box-front, .flip-box-back{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;  //hide front & back face //*
+    }
+    .flip-box-back{
+      background-color: grey;
+      color: white;
+      transform: rotateY(180deg);  //became positioned on backface of img container
+    }
+}
+//hover and transform ROTATE
+.flip-box:hover .flip-box-inner{
+  transform: rotateY(180deg);
+}
+//SECTION 3 , SHAKING AN IMAGE WITH KEYFRAMES
+.section3{
+  width: 400px;
+  max-width: 400px;
+  height: 300px;
+  max-height: auto;
+  margin: 30px auto;
+  img:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+}
+//keyframe
+@keyframes shake{
+  0% {transform: translate(10px, 10px) rotate(0deg);}
+  25% {transform: translate(10px, 10px) rotate(-5deg);}
+  50% {transform: translate(10px, 10px) rotate(5deg);}
+  100% {transform: translate(10px, 10px) rotate(-5deg);}
+}
