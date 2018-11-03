@@ -3,126 +3,103 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  font-family: Arial;
 }
 
-* h2,
-body h2 {
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.main h1 {
+  font-size: 50px;
+  margin: 30px 0px;
+}
+
+.main h2 {
+  margin: 30px 0px;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/*padding BETWEEN each column */
+.row #nature {
+  padding: 8px;
+  float: left;
+  width: 33.33%;
+  background-color: white;
+  padding: 10px;
+  display: none;
+}
+
+.row #nature h4 {
   text-align: center;
-  margin: 20px;
 }
 
-* p,
-body p {
+.row #nature p {
   text-align: center;
-  margin: 20px;
 }
 
-* .section1,
-body .section1 {
-  width: 400px;
-  max-width: 400px;
-  height: 300px;
-  max-height: auto;
-  margin: 30px auto;
+.row #cars {
+  padding: 8px;
+  float: left;
+  width: 33.33%;
+  background-color: white;
+  padding: 10px;
+  display: none;
 }
 
-* .section1 img:hover,
-body .section1 img:hover {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+.row #cars h4 {
+  text-align: center;
 }
 
-.flip-box {
-  width: 300px;
-  height: 200px;
-  background-color: transparent;
-  border: 1px solid #f1f1f1;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  margin: 30px auto;
+.row #cars p {
+  text-align: center;
 }
 
-.flip-box .flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: -webkit-transform 0.9s;
-  transition: -webkit-transform 0.9s;
-  transition: transform 0.9s;
-  transition: transform 0.9s, -webkit-transform 0.9s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+.row #people {
+  padding: 8px;
+  float: left;
+  width: 33.33%;
+  background-color: white;
+  padding: 10px;
+  display: none;
 }
 
-.flip-box .flip-box-front, .flip-box .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+.row #people h4 {
+  text-align: center;
 }
 
-.flip-box .flip-box-back {
-  background-color: grey;
+.row #people p {
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
   color: white;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.flip-box:hover .flip-box-inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.section3 {
-  width: 400px;
-  max-width: 400px;
-  height: 300px;
-  max-height: auto;
-  margin: 30px auto;
-}
-
-.section3 img:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes shake {
-  0% {
-    -webkit-transform: translate(10px, 10px) rotate(0deg);
-            transform: translate(10px, 10px) rotate(0deg);
-  }
-  25% {
-    -webkit-transform: translate(10px, 10px) rotate(-5deg);
-            transform: translate(10px, 10px) rotate(-5deg);
-  }
-  50% {
-    -webkit-transform: translate(10px, 10px) rotate(5deg);
-            transform: translate(10px, 10px) rotate(5deg);
-  }
-  100% {
-    -webkit-transform: translate(10px, 10px) rotate(-5deg);
-            transform: translate(10px, 10px) rotate(-5deg);
-  }
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(10px, 10px) rotate(0deg);
-            transform: translate(10px, 10px) rotate(0deg);
-  }
-  25% {
-    -webkit-transform: translate(10px, 10px) rotate(-5deg);
-            transform: translate(10px, 10px) rotate(-5deg);
-  }
-  50% {
-    -webkit-transform: translate(10px, 10px) rotate(5deg);
-            transform: translate(10px, 10px) rotate(5deg);
-  }
-  100% {
-    -webkit-transform: translate(10px, 10px) rotate(-5deg);
-            transform: translate(10px, 10px) rotate(-5deg);
-  }
 }
