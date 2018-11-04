@@ -1,0 +1,251 @@
+//*******************************************************************
+//*******************************************************************
+
+//                          TABLE OF CONTENTS
+
+//                    - Imports
+//                    - Variables & Mixins
+//                      - media queries
+
+//                    - Global
+//                      - a11y-aid
+
+//                    - Navigation
+//                    - Header
+//                    - Header Footer
+//                    - Main
+//                    - Footer
+
+//*******************************************************************
+//*******************************************************************
+
+//*********************************************************** IMPORTS
+@import _reset.sass
+@import _colors.sass
+@import _typeography.sass
+@import _responsive-font.sass
+
+//************************************************ VARIABLES & MIXINS
+//**************************************** MEDIA QUERIES
+$tablet: 37.5em
+$desktop: 80em
+
+=media($size)
+  @media screen and (min-width: $size)
+    @content
+
+=tablet
+  @media screen and (min-width: $tablet)
+    @content
+
+=desktop
+  @media screen and (min-width: $desktop)
+    @content
+
+//************************************ end media queries
+=bg-image($image)
+  background: url($image) no-repeat center
+  background-size: cover
+
+//******************************************** end variables & mixins
+//************************************************************ GLOBAL
+html 
+  box-sizing: border-box
+
+*, *:before, *:after 
+  box-sizing: inherit
+
+body
+  max-width: 1280px
+  margin: 0 auto
+
+//********************************************* A11Y-AID
+.a11y-aid
+  width: 1px
+  height: 1px
+  margin: 0
+  position: absolute
+  overflow: hidden
+  clip: rect(1px, 1px, 1px, 1px);
+
+  &:focus
+    text-align: center
+    color: #fff
+    background: $primary
+    display: flex
+    align-items: center
+    width: auto
+    height: 60px
+    top: 12px
+    padding: 0 2%
+    z-index: 2
+    clip: auto
+
+//***************************************** end a11y-aid
+//******************************************************** NAVIGATION
+nav
+  +font($sans, 1em, normal, $primary)
+
+  a
+    color: $primary
+    text-decoration: none
+
+  height: 83px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  .logo img
+    width: 219px
+    height: 40px
+
+  .links 
+    margin-right: 67px
+
+    li
+      display: inline-block
+      margin-left: 29px
+
+//**************************************************** end navigation
+//************************************************************ HEADER
+
+
+//******************************************************** end header
+header
+  +font($serif, 2em, normal, #fff)
+  text-align: center
+  background: url('../img/enchant-your-guests.jpg')
+
+  margin-top: -1px
+  height: 392px
+
+  a
+    text-decoration: none
+
+  .header-container
+    margin-bottom: 16px
+    h2
+      font-size: 2.25em
+      padding-top: 55px
+
+    p
+      font-size: 1.3em
+      margin-bottom: 97px
+      padding-top: 46px
+
+    h2, p
+      text-shadow: 0 0 10px black
+
+  .cta
+    background: linear-gradient($accent, darken($accent, 8%))
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 220px
+    height: 64px
+    border-radius: 5px
+    box-shadow: 3px 7px 5px -6px #9C9C9C
+    a
+      color: #fff
+      font-size: 0.8em
+      letter-spacing: 0.03em
+
+  //**************************************** HEADER-FOOTER
+  .header-footer
+    font-family: $sans
+    font-size: 16px
+    background: $primary
+    height: 130px
+    
+    ul
+      display: grid
+      grid-template-columns: repeat(5, 1fr)
+
+    .one
+      grid-column: 2 / 3
+
+    .two
+      grid-column: 3 / 4
+
+    .three
+      grid-column: 4 / 5
+
+    li 
+      font-size: 14px
+
+      img
+        margin-top: 9px
+        height: 60px
+
+      h4
+        text-transform: uppercase
+        margin-top: 7px
+
+      p
+        margin-top: 7px
+
+  //************************************ end header-footer
+  //************************************************************** MAIN
+main
+  margin-top: 130px
+  display: flex
+  justify-content: center;
+
+  .image-container
+    margin: 45px 0
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 10px
+
+  .images
+    position: relative
+    width: 370px
+
+    img
+      height: 300px
+      width: 370px
+
+    p
+      +font($sans, 1.75em, normal, #fff)
+      background: rgba(0, 0, 0, 0.35)
+      position: absolute
+      bottom: 0
+      height: 66px
+      width: 100%
+      display: flex
+      align-items: center
+      padding-top: 4px
+      padding-left: 30px
+//********************************************************** end main
+//************************************************************ FOOTER
+footer
+  +font($sans, 1em, normal, #fff)
+  background: $primary
+  padding: 60px 52px 34px
+
+  h2
+    font-family: $serif
+    font-size: 2.73em
+    margin-bottom: 33px
+    padding-left: 25px
+
+  .footer-text_container
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+    grid-gap: 38px
+
+  .footer-text
+    grid-column: span 2
+    font-size: 0.98em
+
+    h3
+      font-weight: bold
+      letter-spacing: 0.03em
+      margin-bottom: 25px
+
+    p
+      font-size: 1.05em
+      font-weight: 300
+      line-height: 1.6em
+//******************************************************** end footer

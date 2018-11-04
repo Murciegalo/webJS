@@ -1,0 +1,382 @@
+//*******************************************************************
+//*******************************************************************
+
+//                          TABLE OF CONTENTS
+
+//                    - Imports
+//                    - Variables & Mixins
+//                      - media queries
+
+//                    - Global
+//                      - a11y-aid
+
+//                    - Navigation
+//                    - Header
+//                    - Header Footer
+//                    - Main
+//                    - Footer
+
+//*******************************************************************
+//*******************************************************************
+
+//*********************************************************** IMPORTS
+@import _reset.sass
+@import _colors.sass
+@import _typeography.sass
+@import _responsive-font.sass
+
+//************************************************ VARIABLES & MIXINS
+//**************************************** MEDIA QUERIES
+$tablet: 37.5em
+$desktop: 80em
+
+=media($size)
+  @media screen and (min-width: $size)
+    @content
+
+=tablet
+  @media screen and (min-width: $tablet)
+    @content
+
+=desktop
+  @media screen and (min-width: $desktop)
+    @content
+
+//************************************ end media queries
+=bg-image($image)
+  background: url($image) no-repeat center
+  background-size: cover
+
+//******************************************** end variables & mixins
+//************************************************************ GLOBAL
+html 
+  box-sizing: border-box
+
+*, *:before, *:after 
+  box-sizing: inherit
+
+body
+  max-width: 1280px
+  margin: 0 auto
+
+//********************************************* A11Y-AID
+.a11y-aid
+  width: 1px
+  height: 1px
+  margin: 0
+  position: absolute
+  overflow: hidden
+  clip: rect(1px, 1px, 1px, 1px);
+
+  &:focus
+    text-align: center
+    color: #fff
+    background: $primary
+    display: flex
+    align-items: center
+    width: auto
+    height: 60px
+    top: 12px
+    padding: 0 2%
+    z-index: 2
+    clip: auto
+
+//***************************************** end a11y-aid
+//******************************************************** NAVIGATION
+nav
+  max-height: 81px
+  margin: 10px
+
+  +media(34.375em)
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  +desktop
+    margin: 20px 0 21px
+
+  ul
+    display: flex
+    justify-content: space-between
+    margin-top: 10px
+
+    +media(34.374em)
+      align-items: center
+      margin: 0
+
+  .links
+    +desktop  
+      margin-right: 50px
+
+  .links a
+    +font($sans, 1em, normal, $primary)
+    text-decoration: none
+
+    +media(34.375em)
+      margin: 0 1.3vw
+      text-align: center
+
+    &:hover, &:active
+      text-decoration: underline
+
+//**************************************************** end navigation
+//************************************************************ HEADER
+header
+  +font($serif, 1em, normal, #fff)
+  text-align: center
+  background: url("../img/enchant-your-guests.jpg") no-repeat center
+  background-size: cover
+  display: flex
+  justify-content: center
+  align-items: flex-end
+  max-width: 1280px
+  min-height: 40vw
+  padding: 16px 0
+
+  +tablet
+    min-height: 0
+    height: 40vw
+    max-height: 400px
+
+  h2
+    +responsive-font(6vw, 2em, 4.6em, 2em)
+
+  p
+    font-size: 1.25em
+    margin-top: 15px
+
+    +tablet
+      +responsive-font(3.5vw, 1.25em, 2.625em, 2em)
+      margin-top: 5.5vw
+
+    +media(1000px)
+      margin-top: 52px
+
+  h2, p
+    text-shadow: 0 0 8px #000
+
+  a
+    font-size: 0.9em
+    letter-spacing: 0.03em
+    text-decoration: none
+    color: #fff
+    text-shadow: none
+
+    +media(43.75em)
+      font-size: 25px
+      letter-spacing: 0
+
+  .cta
+    letter-spacing: 0.03em
+    background: linear-gradient($accent, darken($accent, 8%))
+    border-radius: 5px
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 180px
+    height: 44px
+    margin: 50px auto 0
+    box-shadow: 0 1px 3px #999
+
+    +media(43.75em)
+      width: 220px
+      height: 64px
+
+    +tablet
+      margin-top: 10vw
+
+    +media(1000px)
+      margin-top: 97px
+
+    p, a
+      margin-top: 0
+
+//******************************************************** end header
+//***************************************************** HEADER FOOTER
+.header-footer
+  +font($sans, 0.85em, normal, #fff)
+  background: $primary
+
+  display: flex
+  justify-content: center
+
+  +desktop
+    height: 131px
+
+  ul
+    text-align: center
+    display: flex
+    justify-content: space-between
+    width: 810px
+
+    li
+      flex-basis: 33.333%
+      align-items: center
+
+    h4
+      font-size: 0.85em
+      text-transform: uppercase
+      letter-spacing: 0.05em
+      margin-top: 6px
+      margin-bottom: 8px
+
+      +media(28.125em)
+        font-size: 1em
+        margin-bottom: 0
+
+    p
+      display: none
+
+      +media(28.125em)
+        font-size: 0.85em
+        letter-spacing: 0.03em
+        line-height: 1.2em
+        display: block
+        margin: 8px
+
+      +tablet
+        font-size: 0.95em
+
+      +desktop
+        font-size: 1em
+
+    img
+      margin: 11px auto 0
+      height: 3.6875em
+
+      &:nth-of-type(3)
+        margin-left: -5px
+
+//************************************************* end header footer
+//************************************************************** MAIN
+main
+  +font($sans, 1em, normal, #fff)
+
+  .image-container
+    max-width: 73em
+
+    +media(28.125em)
+      display: flex
+      flex-wrap: wrap
+      margin: 0 auto
+      margin-top: 3vw
+
+    +desktop
+      margin-top: 45px
+
+  .romance,
+  .visitors,
+  .picnic,
+  .grill,
+  .celebration,
+  .kids
+    display: flex
+    align-items: flex-end
+    height: 35vw
+    max-height: 18.75em
+    width: 100%
+
+    // weird % is to accomodate the border of each
+    // image into the width of the container
+    +media(28.125em)
+      width: 48%
+      margin: 2.5px
+
+    +media(50em)
+      width: 32.08%
+      margin: 5px
+
+  .romance
+    +bg-image('../img/romance.jpg')
+
+  .visitors
+    +bg-image('../img/visitors.jpg')
+
+  .picnic
+    +bg-image('../img/picnic.jpg')
+
+  .grill
+    +bg-image('../img/grill.jpg')
+
+  .celebration
+    +bg-image('../img/celebration.jpg')
+
+  .kids
+    +bg-image('../img/kids.jpg')
+
+  p
+    letter-spacing: 0.03em
+    background: rgba(0, 0, 0, 0.4)
+    display: flex
+    align-items: center
+    width: 100%
+    height: 2.48em
+    padding-left: 10px
+    
+    +media(50em)
+      font-size: 1.4em
+
+    +desktop
+      font-size: 1.65em
+      padding-left: 28px
+
+//********************************************************** end main
+//************************************************************ FOOTER
+footer
+  +font($sans,  1em, normal, #fff)
+  background: $primary
+  padding: 60px 16px 30px
+
+  +desktop
+    margin-top: 45px
+    padding: 55px 51px 39px
+
+  h2
+    +font($serif, 2.25em, normal, #fff)
+    text-align: center
+    line-height: 1.15em
+
+    +media(50em)
+      text-align: left
+      padding-left: 25px
+
+    +desktop
+      font-size: 2.75em
+
+  .footer-text_container
+    display: block
+
+    +media(50em)
+      display: flex
+      justify-content: space-between
+
+  .footer-text
+    letter-spacing: 0.025em
+
+    // creates borders only on the inside of imgs to prevent
+    // outside border from interferring with container size
+    +media(50em)
+      &:nth-of-type(1)
+        margin-right: 18px
+
+      &:nth-of-type(2)
+        margin: 0 18px
+
+      &:nth-of-type(3)
+        margin-left: 18px
+
+    h3
+      font-weight: bold
+      line-height: 1.15em
+      margin-top: 30px
+
+    p
+      font-weight: 300
+      line-height: 1.6em
+      margin-top: 15px
+
+      +desktop
+        margin-top: 25px
+
+//******************************************************** end footer
+//******************************************************** end global

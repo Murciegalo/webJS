@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Alegreya:400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 16px; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+.a11y-aid {
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+  .a11y-aid:focus {
+    text-align: center;
+    color: #fff;
+    background: #173493;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 60px;
+    top: 12px;
+    padding: 0 2%;
+    z-index: 2;
+    clip: auto; }
+
+nav {
+  max-height: 81px;
+  margin: 10px; }
+  @media screen and (min-width: 34.375em) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }
+  @media screen and (min-width: 80em) {
+    nav {
+      margin: 20px 0 21px; } }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; }
+    @media screen and (min-width: 34.374em) {
+      nav ul {
+        align-items: center;
+        margin: 0; } }
+  @media screen and (min-width: 80em) {
+    nav .links {
+      margin-right: 50px; } }
+  nav .links a {
+    font-family: "Open Sans", Georgia, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    color: #173493;
+    text-decoration: none; }
+    @media screen and (min-width: 34.375em) {
+      nav .links a {
+        margin: 0 1.3vw;
+        text-align: center; } }
+    nav .links a:hover, nav .links a:active {
+      text-decoration: underline; }
+
+header {
+  font-family: Alegreya, serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  background: url("../img/enchant-your-guests.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 1280px;
+  min-height: 40vw;
+  padding: 16px 0; }
+  @media screen and (min-width: 37.5em) {
+    header {
+      min-height: 0;
+      height: 40vw;
+      max-height: 400px; } }
+  header h2 {
+    font-size: 2em;
+    font-size: 6vw; }
+    @media (max-width: 33.3333333333em) {
+      header h2 {
+        font-size: 2em; } }
+    @media (min-width: 76.6666666667em) {
+      header h2 {
+        font-size: 4.6em; } }
+  header p {
+    font-size: 1.25em;
+    margin-top: 15px; }
+    @media screen and (min-width: 37.5em) {
+      header p {
+        font-size: 2em;
+        font-size: 3.5vw;
+        margin-top: 5.5vw; } }
+  @media screen and (min-width: 37.5em) and (max-width: 35.7142857143em) {
+    header p {
+      font-size: 1.25em; } }
+  @media screen and (min-width: 37.5em) and (min-width: 75em) {
+    header p {
+      font-size: 2.625em; } }
+    @media screen and (min-width: 1000px) {
+      header p {
+        margin-top: 52px; } }
+  header h2, header p {
+    text-shadow: 0 0 8px #000; }
+  header a {
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: none; }
+    @media screen and (min-width: 43.75em) {
+      header a {
+        font-size: 25px;
+        letter-spacing: 0; } }
+  header .cta {
+    letter-spacing: 0.03em;
+    background: linear-gradient(#417505, #2b4e03);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 44px;
+    margin: 50px auto 0;
+    box-shadow: 0 1px 3px #999; }
+    @media screen and (min-width: 43.75em) {
+      header .cta {
+        width: 220px;
+        height: 64px; } }
+    @media screen and (min-width: 37.5em) {
+      header .cta {
+        margin-top: 10vw; } }
+    @media screen and (min-width: 1000px) {
+      header .cta {
+        margin-top: 97px; } }
+    header .cta p, header .cta a {
+      margin-top: 0; }
+
+.header-footer {
+  font-family: "Open Sans", Georgia, sans-serif;
+  font-size: 0.85em;
+  font-weight: normal;
+  color: #fff;
+  background: #173493;
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 80em) {
+    .header-footer {
+      height: 131px; } }
+  .header-footer ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 810px; }
+    .header-footer ul li {
+      flex-basis: 33.333%;
+      align-items: center; }
+    .header-footer ul h4 {
+      font-size: 0.85em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 6px;
+      margin-bottom: 8px; }
+      @media screen and (min-width: 28.125em) {
+        .header-footer ul h4 {
+          font-size: 1em;
+          margin-bottom: 0; } }
+    .header-footer ul p {
+      display: none; }
+      @media screen and (min-width: 28.125em) {
+        .header-footer ul p {
+          font-size: 0.85em;
+          letter-spacing: 0.03em;
+          line-height: 1.2em;
+          display: block;
+          margin: 8px; } }
+      @media screen and (min-width: 37.5em) {
+        .header-footer ul p {
+          font-size: 0.95em; } }
+      @media screen and (min-width: 80em) {
+        .header-footer ul p {
+          font-size: 1em; } }
+    .header-footer ul img {
+      margin: 11px auto 0;
+      height: 3.6875em; }
+      .header-footer ul img:nth-of-type(3) {
+        margin-left: -5px; }
+
+main {
+  font-family: "Open Sans", Georgia, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: #fff; }
+  main .image-container {
+    max-width: 73em; }
+    @media screen and (min-width: 28.125em) {
+      main .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 3vw; } }
+    @media screen and (min-width: 80em) {
+      main .image-container {
+        margin-top: 45px; } }
+  main .romance,
+  main .visitors,
+  main .picnic,
+  main .grill,
+  main .celebration,
+  main .kids {
+    display: flex;
+    align-items: flex-end;
+    height: 35vw;
+    max-height: 18.75em;
+    width: 100%; }
+    @media screen and (min-width: 28.125em) {
+      main .romance,
+      main .visitors,
+      main .picnic,
+      main .grill,
+      main .celebration,
+      main .kids {
+        width: 48%;
+        margin: 2.5px; } }
+    @media screen and (min-width: 50em) {
+      main .romance,
+      main .visitors,
+      main .picnic,
+      main .grill,
+      main .celebration,
+      main .kids {
+        width: 32.08%;
+        margin: 5px; } }
+  main .romance {
+    background: url("../img/romance.jpg") no-repeat center;
+    background-size: cover; }
+  main .visitors {
+    background: url("../img/visitors.jpg") no-repeat center;
+    background-size: cover; }
+  main .picnic {
+    background: url("../img/picnic.jpg") no-repeat center;
+    background-size: cover; }
+  main .grill {
+    background: url("../img/grill.jpg") no-repeat center;
+    background-size: cover; }
+  main .celebration {
+    background: url("../img/celebration.jpg") no-repeat center;
+    background-size: cover; }
+  main .kids {
+    background: url("../img/kids.jpg") no-repeat center;
+    background-size: cover; }
+  main p {
+    letter-spacing: 0.03em;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2.48em;
+    padding-left: 10px; }
+    @media screen and (min-width: 50em) {
+      main p {
+        font-size: 1.4em; } }
+    @media screen and (min-width: 80em) {
+      main p {
+        font-size: 1.65em;
+        padding-left: 28px; } }
+
+footer {
+  font-family: "Open Sans", Georgia, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: #fff;
+  background: #173493;
+  padding: 60px 16px 30px; }
+  @media screen and (min-width: 80em) {
+    footer {
+      margin-top: 45px;
+      padding: 55px 51px 39px; } }
+  footer h2 {
+    font-family: Alegreya, serif;
+    font-size: 2.25em;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    line-height: 1.15em; }
+    @media screen and (min-width: 50em) {
+      footer h2 {
+        text-align: left;
+        padding-left: 25px; } }
+    @media screen and (min-width: 80em) {
+      footer h2 {
+        font-size: 2.75em; } }
+  footer .footer-text_container {
+    display: block; }
+    @media screen and (min-width: 50em) {
+      footer .footer-text_container {
+        display: flex;
+        justify-content: space-between; } }
+  footer .footer-text {
+    letter-spacing: 0.025em; }
+    @media screen and (min-width: 50em) {
+      footer .footer-text:nth-of-type(1) {
+        margin-right: 18px; }
+      footer .footer-text:nth-of-type(2) {
+        margin: 0 18px; }
+      footer .footer-text:nth-of-type(3) {
+        margin-left: 18px; } }
+    footer .footer-text h3 {
+      font-weight: bold;
+      line-height: 1.15em;
+      margin-top: 30px; }
+    footer .footer-text p {
+      font-weight: 300;
+      line-height: 1.6em;
+      margin-top: 15px; }
+      @media screen and (min-width: 80em) {
+        footer .footer-text p {
+          margin-top: 25px; } }
