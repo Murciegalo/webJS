@@ -1,0 +1,294 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  header{
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    height: 70px;
+    position: fixed;
+    z-index: 10;
+  }
+
+  /*aqui modifico el ancho*/
+  .ancho{
+    width: 80%;
+    hieght: 70px;
+    /*background red*/
+    margin: auto;
+  }
+  .logo{
+    width: 30%;
+    height: 70px;
+    /*background blue*/
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+
+  .logo p a{
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav{
+    width: 70%;
+    height: 70px;
+    /*background olive*/
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+  }
+
+  nav ul li{
+    display: inline;
+    font-size: 25px;
+    color: white;
+  }
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+  nav ul li a:hover{
+    color: red;
+  }
+
+  /*-----------------------------------------------------------------Particles----------*/
+
+  #particles-js{
+    background-image: url(../images/snow.jpg);
+    background-position: center;
+    background-attachment: contain;     /*css will modify image based on viewport size*/
+    background-size: cover;            /*Mismo size of div*/
+  }
+/*-------------------------------------------------------texto medio-----------*/
+.ancho-letras{
+  top: 200px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+.letras-slider{
+  width: 80%;
+  margin:auto;
+}
+.letras-slider h1 {
+   color: white;
+   font-family: monospace;
+   font-size: 70px;
+}
+.letras-slider p {
+  color: white;
+  font-family: monospace;
+  font-size: 38px;
+  padding-top: 18px;
+}
+/*----------------------------------------------------------SECTIONS----------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+h1, h4, h5, h6 {         /*h2 & h3 to be removed since I personally customized them*/
+  text-transform: uppercase;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+/* personalizo un h como yo quiero*/
+h2{
+  font-size: 26px;
+  color: #333;
+}
+h3{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  /* line-height: 1.5px */
+  padding-top: 20px;
+  font-weight: normal;   /*all hs are outcomed on bold by default*/
+}
+h4{
+  margin-top: 15px;
+  font-size: 16px;
+}
+h5{
+  font-family: Lato, sans-serif;
+  line-height: 1.5;
+  font-weight: normal;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+p{
+  color: #888;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+}
+/*-----------------------------Seccion de bienvenidos--------------------*/
+.wap{
+  width: 90%;
+  margin:auto;
+}
+
+.bienvenidos{
+      margin-top: 50px;
+      text-align: center;
+}
+/*----------------------------------COLUMNAS---------------------------------*/
+.contenedor-columnas{
+  width: 100%;
+  margin:auto;
+  margin-bottom: 50px;
+}
+.columnasx3{
+  width: 33.333%;
+  float: left;                      /*float to the left all columns within 100% width from viewport*/
+  padding: 20px 20px;    /*If I leave it so far I will have 3 img on next line due to increased width on 120px, How I fix it?*/
+  box-sizing: border-box;
+  margin: auto;
+}
+.columnasx3 img{
+  width: 100%;
+}
+/*-------------------------------------------------------BANNER-----------------------------*/
+.banner-1{
+        width: 100%;
+        background: #1ABC9C;
+        clear: both;
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        box-sizing: border-box;
+        transition: 0.4s;                            /*same transition*/
+}
+.banner-1:hover{
+  background: #444;
+  transition: 0.4s;                                  /*same transition*/
+}
+.banner-1 h3{
+        color: #fff;
+        font-size: 32px;
+}
+.banner-1 a{
+        text-decoration: none;
+        margin-left: 30px;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+}
+/*-------------------------------------------------------ICONS-----------------------------*/
+.svg-inline--fa{
+  float: left;
+  color: blue;
+  padding-right: 8px;
+}
+.columnasx3 h4{
+  padding-bottom: 15px;
+  text-align: center;
+}
+/*-------------------------------------------------------BANNERS 2-----------------------------*/
+.banner-2{
+  background-image: url(../images/cabra.jpg);
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  /* background-repeat: no-repeat;          no se repite image
+      background-size: cover;                     image expand 100% width
+      background-attachment: fixed;          position fixed */
+      text-align: center;
+}
+.banner-2 h3{
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 100%;
+  font-size: 32px;
+  padding-top: 9%;
+
+}
+.banner-2 a{
+        text-decoration: none;
+        margin-left: 30px;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+}
+/*-------------------------------------------------------ICONSNAVIGATION-----------------------------*/
+.red{
+  position: fixed;
+  top: 100px;
+  z-index: 100;
+  left: 0;
+  box-sizing: border-box;
+}
+.red #git img:hover{
+  background: yellow;
+  padding: 10px 50px;
+  transition: all .2s ease;
+}
+/*-------------------------------------------------TABLA PRECIOS-----------------------------------*/
+.tabla{
+  width: 100%          /*Take all 90% viewport*/
+  margin:auto;          /*center*/
+  text-align: center;  /*center*/
+  padding-top: 50px;
+}
+.tablax4{
+  float: left;
+  width: 25%;
+  margin-top: 20px;
+}
+.caja1{
+  border: 1px solid #5c6552;
+  background: #30353c;
+}
+.iconprecio  i{
+  color: #85c34a;
+  padding-top: 20px;
+  font-size: 3em;
+  padding-bottom: 10px;
+  color: red;
+}
+iframe{
+  width: 100%;
+  top: 40px;
+}
+/*--------------------------------------------FORMS-----------------------------------------------------*/
+.dos-columnas{
+  margin-top: 50px;
+}
+.formulario{
+  float: left;
+  width: 50%;
+  margin: auto;
+  color: #999;
+}
+.caja-1{
+  width: 250px;
+  height: 40px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 14px;
+}
+.caja-2{
+  width: 545px;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 14px;
+}
+.contratar{
+  margin: 20px;
+  padding: 20px;
+  width: 545px;
+  height: 20px;
+  text-align: center;
+}
