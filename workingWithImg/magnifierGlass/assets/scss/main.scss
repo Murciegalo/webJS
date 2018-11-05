@@ -1,0 +1,25 @@
+*,
+body{
+  box-sizing: border-box;
+  margin: 0;
+  h1{
+    text-align: center;
+    margin: 20px;
+  }
+}
+//relative pos for Container to keep IN the magnifier div
+.magnifierContainer{
+  position: relative;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+//magnifier Glass to be added with JS
+.magnifierGlass{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+}
