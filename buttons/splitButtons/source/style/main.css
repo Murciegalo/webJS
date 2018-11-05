@@ -2,7 +2,7 @@
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
 }
 
 * h1,
@@ -18,12 +18,23 @@ body .btn {
   font-size: 16px;
   color: white;
   background-color: #2196F3;
+  margin-left: 25px;
+  margin-bottom: 25px;
 }
 
 * .dropdown,
 body .dropdown {
   position: absolute;
   display: inline-block;
+}
+
+* .dropdown .btnAttached,
+body .dropdown .btnAttached {
+  padding: 16px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  background-color: #2196F3;
 }
 
 * .dropdown .dropdown-content,
@@ -55,4 +66,117 @@ body .dropdown:hover .dropdown-content a:hover {
 * .btn:hover,
 body .btn:hover {
   background-color: #0B7DDA;
+}
+
+* .btnAttached:hover,
+body .btnAttached:hover {
+  background-color: #0B7DDA;
+}
+
+* h2,
+body h2 {
+  text-align: center;
+  margin: 40px;
+}
+
+* .button,
+body .button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;
+}
+
+* .button span,
+body .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+* .button span:after,
+body .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+* .button:hover span,
+body .button:hover span {
+  padding-right: 25px;
+}
+
+* .button:hover span:after,
+body .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+* button,
+body button {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #616161;
+  color: white;
+}
+
+* #more,
+body #more {
+  display: none;
+}
+
+* p,
+body p {
+  margin: 10px;
+}
+
+* .nextPrevious,
+body .nextPrevious {
+  margin: 30px;
+}
+
+* .nextPrevious a,
+body .nextPrevious a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+* .nextPrevious a:hover,
+body .nextPrevious a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+* .nextPrevious .previous,
+body .nextPrevious .previous {
+  background-color: #f1f1f1;
+  color: black;
+  margin: 20px;
+}
+
+* .nextPrevious .next,
+body .nextPrevious .next {
+  background-color: #4CAF50;
+  color: white;
+  margin: 20px;
+}
+
+* .nextPrevious .round,
+body .nextPrevious .round {
+  border-radius: 50%;
 }

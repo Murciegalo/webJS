@@ -1,7 +1,7 @@
 *,
 body{
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
   h1{
     text-align: center;
     margin: 20px;
@@ -12,10 +12,19 @@ body{
     font-size: 16px;
     color: white;
     background-color: #2196F3;
+    margin-left: 25px;
+    margin-bottom: 25px;
   }
   .dropdown{
     position: absolute;
     display: inline-block; //next to 1st button
+    .btnAttached{
+      padding: 16px;
+      border: none;
+      font-size: 16px;
+      color: white;
+      background-color: #2196F3;
+    }
     .dropdown-content{
       background-color: #f1f1f1;
       min-width: 160px;
@@ -43,5 +52,85 @@ body{
   .btn:hover{
     background-color: #0B7DDA;
   } //change color buttons
+  .btnAttached:hover{
+    background-color: #0B7DDA;
+  }
+  // ANIMATED BUTTON
+  h2{
+    text-align: center;
+    margin: 40px;
+  }
+  .button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;
 }
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';  //sign added after
+  position: absolute;
+  opacity: 0; //hidden
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;   //show it on hover
+  right: 0;
+}
+
+// READ MORE/LESS BUTTON
+  button{
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #616161;
+    color: white;
+  }
+  #more{display: none;}
+  p{
+    margin: 10px;
+  }
+  .nextPrevious{
+    margin: 30px;
+    a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+    margin: 20px;
+}
+.next {
+    background-color: #4CAF50;
+    color: white;
+    margin: 20px;
+}
+.round {
+    border-radius: 50%;
+}
+  }
+}
+//body ends here
 //-----------------------
