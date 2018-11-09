@@ -1,0 +1,48 @@
+body {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 20px;
+}
+
+body h1 {
+  font-size: 30px;
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+body #myInput {
+  width: 100%;
+  max-width: 70%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  padding: 15px;
+}
+
+body #myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body #myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+body #myUL li a:hover {
+  background-color: #eee;
+}
