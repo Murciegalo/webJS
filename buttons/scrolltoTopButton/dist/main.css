@@ -1,10 +1,13 @@
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  letter-spacing: .4em;
+  padding: 20px;
+  text-align: justify;
 }
 
 body h1 {
-  font-size: 20px;
+  font-size: 30px;
   color: red;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,113 +15,21 @@ body h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 20px;
 }
 
-.tab {
-  max-width: 100%;
-  background-color: #F1F1F1;
-  border: 1px solid #ccc;
-  overflow: hidden;
-}
-
-.tab .tablinks {
-  padding: 20px;
+body button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
   border: none;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.tab .tablinks:hover {
-  background-color: #ddd;
-}
-
-.tab .tablinks .active {
-  background-color: #ccc;
-}
-
-.tabcontent {
-  display: none;
-  padding: 20px;
-}
-
-.active {
-  display: block;
-  -webkit-animation: fadeEffect 2s;
-          animation: fadeEffect 2s;
-}
-
-/* Go from zero to full opacity */
-@-webkit-keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.tabcontentI {
-  display: none;
-  max-width: 100%;
-  height: 300px;
-  max-height: auto;
-}
-
-.tabcontentI h2 {
-  text-align: center;
-  padding: 70px 0px 20px 0px;
-  font-size: 40px;
-  color: white;
-  margin: 0;
-}
-
-.tabcontentI p {
-  text-align: center;
-  font-size: 18px;
-  color: white;
-}
-
-.activeI {
-  display: block;
-}
-
-#Madrid {
+  outline: none;
   background-color: red;
-}
-
-#Abu-Dhabi {
-  background-color: green;
-}
-
-#Rome {
-  background-color: blue;
-}
-
-#Oslo {
-  background-color: orange;
-}
-
-.tablinkI {
-  max-width: 25%;
-  width: 25%;
-  float: left;
-  border: none;
-  padding: 20px;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
   font-size: 18px;
-  font-weight: 500;
-}
-
-.tablinkI:hover {
-  background-color: #999;
 }
