@@ -1,0 +1,46 @@
+body{
+  box-sizing: border-box;
+  #myBtnContainer{
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+  }
+  .container {
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    // display: none;
+  }
+// added to the filtered elements
+  .show {
+    display: block;
+  }//-------------------------
+//STYLE FOR BUTTONS
+  .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  }
+// HOVER
+  .btn:hover {
+  background-color: #ddd;
+  }
+ // active button
+  .btn.active {
+  background-color: #666;
+  color: white;
+  }
+}

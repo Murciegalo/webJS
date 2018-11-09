@@ -1,0 +1,21 @@
+{
+  "name": "readytogokit",
+  "version": "1.0.0",
+  "description": "Starter kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raul",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.9.4",
+    "sass": "^1.14.3"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1"
+  }
+}
