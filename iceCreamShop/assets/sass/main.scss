@@ -1,0 +1,60 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+@import "navigation";
+@import "mainContent";
+// FONT FACE (LOCAL)
+@font-face{
+  font-family: myfont;
+  src: url("../Fonts/font.ttf");
+}
+// BOXES FIXED
+*{
+  box-sizing: border-box;
+}
+// SIDEBAR STYLE AND PAGE FRAMES
+body {
+  // font-family: 'Roboto', sans-serif;
+    font-family: myfont;
+  // HEADER
+  #sidebar{
+    background: url(../img/background1.jpg);
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    border-right: 5px solid white;
+    // H1 SIDEBAR
+    h1{
+      font-size: 45px;
+      padding: 10px;
+      color: #1C155D;
+    }
+    h1:hover{
+      color: #229AB6;
+    }
+    // TOpIMAGE SIDEBAR
+    img{
+      width: 300px;
+      height: 200px;
+      position: relative;
+      top: 30px;
+    }
+    // PARAGRAPHsIDEBAR
+    p{
+      font-size: 35px;
+      text-transform: capitalize;
+      padding: 20px 5px;
+      position: relative;
+      margin-top: 70px;
+      margin-bottom: 50px;
+      color: #1C155D;
+    }
+    p:hover{
+      color: #229AB6;
+    }
+  }
+  // SIDEBAR ENDS
+}
+// BODY ENDS

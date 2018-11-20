@@ -1,0 +1,42 @@
+// SECOND FRAME NAVIGATION
+#navigation{
+  position: absolute;
+  left: 20%;
+  width: 80%;
+  background: #F5EEEE;
+  // LOGO
+  .logo{
+    float: left;
+    padding: 5px 30px;
+    margin-right: 500px;
+    img{
+      width: 80px;
+      height: 82px;
+    }
+    // DIMENSIONS PROVIDED TO TRICK CSS INTO DISAPPEARING
+    img:hover{
+      transform: rotateY(90deg);
+    }
+  }
+  ul{
+    padding: 30px;
+  li{
+    float: left;
+    font-size: 45px;
+    a{
+      text-decoration: none;
+      color: #4B2D18;
+      padding: 20px;
+      margin-right: 100px;
+    }
+    // HOVER EFFECTS ON NAV ITEMS SELECTION
+    a:hover{
+      color: #D32860;
+      text-decoration: underline;
+      font-size: 55px;
+      background: white;
+      margin-right: 70px;
+    }
+  }
+ }
+}
