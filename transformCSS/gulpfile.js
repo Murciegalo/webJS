@@ -44,6 +44,7 @@ gulp.task('browser-sync', ['styles'], function () {
     });
 })
 
+//To Be Added ON more advance FULLStack projects
 //gulp.task('webpack', (cb) => {
 //  exec('webpack', function (err, stdout, stderr) {
 //      console.log(stdout);
