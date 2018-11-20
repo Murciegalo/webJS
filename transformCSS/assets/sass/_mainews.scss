@@ -1,0 +1,129 @@
+.mainupdates{
+  position: relative;
+  width: 100%;
+  display: flex;
+  h1{
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+    // width: 385px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    margin-top: 2em;
+    line-height: 2em;
+    // BRINGING FORWARD H1
+    z-index: 1;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+  // ONLY H1 ELEMENT STYLES END
+  article{
+    position: relative;
+    width: 33.33%;
+    padding: 15em 5vw 9em;
+    background-color: #BC3428;
+    // AUTHOR PICTURE & NAME CONTAINER BEGINS
+    .author{
+      width: 100%;
+      display: block;
+      a{
+        text-decoration: none;
+      img{
+        width: 75px;
+        height: 75px;
+        margin-right: 1.2em;
+        margin-bottom: 2em;
+        border: 5px solid white;
+        border-radius: 20%;
+        filter: grayscale(100%);
+        // POSITIONING
+        display: inline-block;
+        transform-origin: 0 100%;
+        transform: rotate(-11deg);
+        transition: transform .2s ease-out;
+        }
+        img:hover{
+          transform-origin: 0 100%;
+          transform: rotate(0deg);
+          transition: transform .2s ease-out;
+        }
+
+      // IMAGE FROM TITLE ENDS
+      p{
+        font-size: 1.1em;
+        font-weight: 200;
+        // POSITIONING
+        width: 200px;
+        display: inline-block;
+        color: white;
+        position: relative;
+        top: -4.5em;
+        #strong{
+          font-weight: 1000;
+          font-size: 1.2em;
+        }
+      }
+      // PARAGRAPH CONTAINER ENDS
+      }
+      // LINK CONTAINER ENDS
+
+      // SECOND CONTAINER ( TITLE ) WHITIN ARTICLE DIV
+    }
+    // AUTHOR CONTAINER (1) WITHIN ARTICLE ENDS
+    h2{
+      font-size: 2.55em !important;
+      font-weight: 900;
+      color: white;
+      display: inline-block;
+      line-height: 1.4em;
+      // FIRST LINKE WITHIN H2
+      a{
+        text-decoration: none;
+        color: white;
+      }
+      a{
+        img{
+          position: relative;
+          top: 6px;
+        }
+      }
+        .comments{
+          font-size: 0.4em !important;
+          display: inline-block;
+        }
+    }
+    // H2 CONTAINER ENDS (2)
+
+    // LIST CONTAINER STYLES BEGIN (3 & LAST CONTAINER)
+    ul{
+      margin-top: 2.5em;
+      max-width: 100%;
+      li{
+        max-width: 50%;
+        width: auto;
+        display: inline-block;
+        padding-top: 2em;
+        padding-right: 1em;
+        .fa-hashtag{
+          margin-right: 0.2em;
+        }
+        a{
+          font-size: 1.2em;
+          color: white;
+          font-weight: 700;
+          .hastagnumbers{
+            font-size: .7em;
+            display: block;
+            float: right;
+            margin-left: .2em;
+          }
+          // COMMENTS COUNTER SPAN STYLES END
+        }
+        // LINKS WITHIN LI ENDS
+      }
+      // LI SEGMENTS WITHIN UNORDERED LIST DIV ENDS
+    }
+  }
+  // ARTICLE CONTAINER ENDS

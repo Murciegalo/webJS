@@ -1,0 +1,133 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Spinnaker');
+@import "reset";
+@import "mainews";
+@import "columnsect";
+@import "membership";
+@import "conferencessect";
+
+// The first step toward this is using box-sizing: border-box;. I like using it on absolutely everything.
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Spinnaker', sans-serif;
+}
+header{
+  background-color: #D33A2C;
+  width: 100%;
+  .logo{
+    display: block;
+    width: 15%;
+    float: left;
+    text-align: center;
+    margin-top: 4em;
+    margin-left: 0.5em;
+  }
+  // LOGO CONTAINER ENDS
+  // STYLES FOR NAV CONTAINER BEGIN
+  .nav{
+    display: block;
+    width: 89%;
+    ul{
+      width: 100%;
+        li{
+          // LINKS WITHIN NAV CONTAINER
+          a{
+            width: 16.3%;
+            float: left;
+            padding: 40px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+              // ICONS STYLES ON NAV CONTAINER
+            img{
+              padding: 20px 25px;
+              // ANIMATION
+              // 1. Origin (x,y)
+              transform-origin: 0 100%;
+              // 2. Which transform
+              transform: rotate(-11deg);
+              // 3. How it runs (type, time it takes, effect, time-delay)
+              transition: transform .2s ease-out;
+            }
+            // IMAGE ICONS ON HOVER
+            h2{
+              font-size: 2em;
+              font-weight: 700;
+              color: white;
+              text-align: center;
+              padding-bottom: 20px;
+            }
+            p{
+              font-size: 1.2em;
+              font-style: italic;
+              color: white;
+              text-align: center;
+              padding-bottom: 20px;
+            }
+            }
+              // LINK STYLES END
+          }
+        // LI ENDS
+        a:hover{
+          h2{color: black;}
+          p{color: black;}
+          img{
+            transform-origin: 0 100%;
+            transform: rotate(0deg);
+            transition: transform .2s ease-out;
+          }
+        }
+        }
+        // UNORDERED LIST CONTAINER ENDS
+      }
+    }
+    // UL & LI STYLES END
+  // NAVIGATION BAR ENDS
+  .topicsearch{
+    display: block;
+    width: 12%;
+    float: right;
+    text-align: center;
+    // margin-top: 4em;
+    button{
+      position: relative;
+      background-color: #D33A2C;
+      border-radius: 7.5%;
+      border: 3px solid white;
+      padding: 5px 25px;
+      margin-top: 6em;
+      a{
+        display: block;
+      .fa-search{
+        color: white;
+        font-size: 1.3em;
+        display: block;
+        float: left;
+        padding: 10px 10px 10px 0px;
+      }
+      .styletopics{
+        float: left;
+        font-size: 1.5em;
+        font-weight: 500;
+        color: white;
+        line-height: 1.5em;
+      }
+      }
+      // LINK STYLED WITHIN BUTTON ENDS
+    }
+    // BUTTON ENDS
+  }
+  // CONTAINER WRAPPING BUTTON STYLES END
+  // WRAPPERFIX CONTAINER ENDS
+      // CLEARFIX FOR FLOATED DIVS
+     header:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+// HEADER STYLES END

@@ -1,0 +1,112 @@
+*{box-sizing: border-box;}
+
+.columns{
+  max-width: 100%;
+  background-color: #F6F3F2;
+  padding-left: 3em;
+  padding-right: 3em;
+  display: flex;
+  h4{
+    display: block;
+    position: absolute;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform-origin: left center;
+    transform: rotateZ(90deg) translateX(-5em) translateY(1em);
+    margin-left: 1em;
+  }
+  // HEADER 4 FROM COLUMNS SECTION ENDS
+}
+  .quarter-column{
+    width: 25%;
+    display: block;
+    padding: 3em 1em 3em 1em;
+    h5{
+      color: #6A667D;
+      margin-bottom: .8em;
+      display: block;
+    }
+    // LAST HEADER 5 FROM LAST QUARTER-COLUMN DIV
+    // H5 HEADER STYLES END
+    h2{
+      font-size: 1.9em;
+      font-weight: 700;
+      word-spacing: -.1em;
+      width: 100%;
+      max-width: 100%;
+      line-height: 1.25em;
+      margin-bottom: 1em;
+    }
+    h6{
+      color: #666666;
+      font-size: 1.1em;
+      font-weight: 900;
+      margin-bottom: 2em;
+      .underlined{
+        text-decoration: underline;
+      }
+// UNDERLINE HEADER 6 WITHIN QUARTER-COLUMN ENDS
+    }
+    // H6 STYLES END
+    p{
+      font-size: 1.25em;
+      font-weight: 300;
+      // line-height: 1.8em;
+      margin-bottom: 3.5em;
+    }
+    // PARAGRAPH ON QUARTER-COLUMN DIV ENDS/
+  }
+  // HOVER & ANIMATION EFFECTS ON QUUARTER COLUMNS
+  .quarter-column:hover{
+    h2{
+      color: red;
+    }
+    a{
+      display: block;
+      height: 5em;
+      width: 5em;
+      position: relative;
+      background-color: #2EA8E9;
+    }
+    .fa-arrow-right{
+      background-color: #2EA8E9;
+      color: white;
+      position: absolute;
+      margin-left: 34px;
+      top: 34px;
+    }
+  }
+  // HOVER & ANIMATION EFFECTS ON QUUARTER COLUMNS
+  // QUARTER-COLUMN CONTAINER ENDS
+  .contentlastquartercolum{
+    text-align: center;
+    img{
+      padding-top: 3em;
+    }
+    }
+      #blue-colored{
+      font-size: 0.8em;
+      color: #2EA8E9;
+      margin-left: 24%;
+      }
+// QUARTER-COLUMN SECTION ENDS
+
+// ARROWS FROM QUARTER-COLUMN SECTIONS SPECIAL STYLE
+// ARROWS FROM QUARTER-COLUMN SECTIONS SPECIAL STYLE
+.quarter-column{
+  a{
+  display: block;
+  height: 5em;
+  width: 5em;
+  position: relative;
+  .fa-arrow-right{
+    color: #2EA8E9;
+    position: absolute;
+    margin-left: 34px;
+    top: 34px;
+  }
+  }
+}
+// ARROWS FROM QUARTER-COLUMN SECTIONS SPECIAL STYLE
+// ARROWS FROM QUARTER-COLUMN SECTIONS SPECIAL STYLE

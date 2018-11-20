@@ -1,0 +1,151 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+@import "variables";
+@import "content-area";
+/*EXACT MEASURES*/
+*{
+  box-sizing: border-box;
+}
+
+/*STYLE DOM*/
+body{
+  font-family: 'Roboto', sans-serif;
+  background: $greyLight;
+}
+.sideMenu{
+  background:$purpleLight;
+  // max-width: 280px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 280px;
+  nav{
+    padding-top: 100px;
+    a{
+      display: block;
+      color: $greyDark;
+      text-decoration: none;
+      padding: 15px 30px;
+      transition: all 0.3s ease-in-out;
+      // WHEN hover, PLEASE CHANGE BACKGROUND COLOR IN 0.5 SECONDS.
+      &:hover{
+        background:  #f8f9f4 ;
+        border-left: 5px solid $greenNeon;
+        padding: 15px 30px 15px 25px;
+        font-size: 20px;
+        font-weight: bold;
+        color: $greenNeon;
+        .fa{
+          color: $greenNeon;
+        }
+      }
+      .fa {
+        color: $greyDark;
+        font-size: 1.4em;
+        margin-right: 0.8rem;
+        display: inline-block;
+        width: 30px;
+        position: relative;
+        top: 2px;
+      }
+      // WHEN ACTIVE (SELECTED), PLEASE STYLE IT THIS WAY FOR ME
+      &.active{
+        background: $purpleDark;
+        border-left: 5px solid $greenNeon;
+        padding: 15px 30px 15px 25px;
+        .fa{
+          color: $greenNeon;
+        }
+      }
+    }
+  }
+}
+// HEADER
+header{
+  margin-left: 280px;
+  padding: 10px;
+  background: #fff;
+// LEFT SECTION STYLE
+  .search_field{
+    display: inline-block;
+    width: 50%;
+    .fa{
+      color: $greenNeon;
+      font-size: 20px;
+    }
+    input{
+      // background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      color: $greenNeon;
+      padding: 10px;
+      font-weight: 100;
+      transition: all .8s ease-in-out;
+      &:hover{
+        // background: $greyLight;
+        border-bottom: 2px solid $greenNeon;
+        border-top: none;
+        border-left: none;
+        width: 50%;
+      }
+    }
+  }
+// LINKS STYLING FOR RIGHT SECTION OF HEADER
+  .user_field{
+    float: right;
+    padding: 10px;
+    a{
+      display: inline-block;
+      padding-right: 30px;
+      text-decoration: none;
+      vertical-align: top;
+      height: 30px;
+      &.add{
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 7px;
+      }
+      // DIV AS TO DESIGN NOTIFICATIONS COUNTER ON TOP OF ELEMENT
+      &.notification {
+        position: relative;
+        font-size: 20px;
+        padding-top: 5px;
+        // COUNTER NOTIFICATIONS POSITIONING
+        .circle {
+          background: red;
+          width: 13px;
+          height: 13px;
+          // TAKE ALL ROOM I TELL YOU TO , AFTER LOCATING WHERE I WANT TO
+          display: inline-block;
+          border-radius: 50%;
+          font-size: 14px;
+          color: white;
+          // DON'T GET OUT OF CIRCLE
+          text-align: center;
+          // ABSOLUTO POSITION TO PARENT ELEMENT(RELATIVE), NOTIFICATION CAN CREATED FOR YOU
+          position: absolute;
+          top: -2px;
+          left: 8px;
+        }
+      }
+    }
+  }
+  // ALWAYS TO BE ADDED WHEN IMGs MUST TAKE ENTIRE SCREEN-WINDOW
+  .user_img{
+  background: url("https://s3.amazonaws.com/uifaces/faces/twitter/vista/128.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  }
+  .fa-caret-down{
+    position: relative;
+    top: -8px;
+    padding-left: 1px;
+  }
+}

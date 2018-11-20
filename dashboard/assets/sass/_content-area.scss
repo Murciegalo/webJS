@@ -1,0 +1,274 @@
+// @import(_variables);
+#content_area{
+  margin-left: 280px;
+  padding: 15px;
+  background: $greyDarkBG;
+  .heading {
+  h1{
+    color: purple;
+    font-size: 30px;
+    font-weight:600;
+    padding: 10px;
+  }
+  p{
+    font-size: 20px;
+    color: purple;
+    font-weight: 400;
+    padding: 10px;
+  }
+  }
+
+.cards{
+  .card {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: auto;
+    .pictprofile{
+      background: url("https://s3.amazonaws.com/uifaces/faces/twitter/vista/128.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+    .nameprofile{
+      font-size: 20px;
+      font-weight: bold;
+      color: $greenNeon;
+      padding-top: 20px;
+      display: block;
+      // INLINE ELEMENT OCCUPYING ALL WIDTH ASSIGNED , CAN NOW ALIGN CENTER BELOW
+      text-align: center;
+    }
+    .job{
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    color: $greenNeon;
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+    }
+    // SMALL TEXT ON CARD 1
+    .education{
+      font-size: 15px;
+      display: inline-block;
+      padding: 10px;
+      color: purple;
+      font-weight: bold;
+    }
+    .schools{
+      font-size: 15px;
+      display: inline-block;
+      padding: 10px;
+    }
+    // h6 FOR CARD 2
+    h6{
+      font-size: 18px;
+      font-weight: bold;
+      font-style: italic;
+      color: purple;
+      padding-top: 10px;
+      margin-bottom: 25px;
+      display: block;
+      text-align: left;
+    }
+    // DATE STYLED ON CARD 2
+    .date{
+        font-size: 30px;
+        display: block;
+        font-weight:600;
+        border-left: 5px solid $greenNeon;
+        position: relative;
+        left: -20px;
+        padding: 5px 45px;
+        margin: 20px 0;
+
+    }
+    .icon1{
+      background: orange;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-size: 14px;
+      color: white;
+      margin-left: 20px;
+      padding: 3px;
+      display: inline-block;
+      text-align: center;
+      // vertical-align: middle;
+    }
+    .location{
+      font-size: 15px;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .position{
+      font-size: 15px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .time{
+      display: block;
+      font-size: 12px;
+      font-weight: 300;
+      color: red;
+      margin-bottom: 22px;
+    }
+    .col-md-2{
+      width: ((2 * 100)/12) + %;
+      padding: 0 15px;
+      display: inline-block;
+      float: left;
+    }
+    .col-md-10{
+      width: ((10 * 100)/12) + %;
+      display: inline-block;
+      float: left;
+    }
+    .icon2{
+      background: blue;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-size: 14px;
+      color: white;
+      margin-left: 20px;
+      padding: 3px;
+      display: inline-block;
+      text-align: center;
+      // vertical-align: middle;
+    }
+  }
+  // CARTA 3
+  .bigImg{
+    background: url("../img/piechart.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 4px;
+  }
+  .workStatus{
+    color: $greyDarkFonts;
+  }
+  // DATACHART1
+  .icon3{
+    background: #286b7b;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  // DATACHART2
+  .icon4{
+    background: #cc3635;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  // DATACHART3
+  .icon5{
+    background: #ffd201;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  .thirds{
+    width: 33%;
+    float: left;
+  }
+}
+// ANCHURA DE LAS 3 CARTAS
+.col-md-4{
+    width: ((4 * 100)/12) + %;
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+    margin-bottom: 30px;
+}
+// ANCHURA ASIGNADA A TEXTO PEKE DENTRO DE CADA CARTA
+.col-md-3{
+  width: ((3 * 100)/12) + %;
+  // TOP/BOTTOM + SIDES
+  padding: 0 25px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.col-md-9{
+  width: 70%;
+  // TOP/BOTTOM + SIDES
+  padding: 0 25px;
+  margin-top: 20px;
+  display: inline-block;
+}
+// TABLE-TABLE-TABLE
+table{
+  width: 98.2%;
+  position: relative;
+  margin-left: 15px;
+  thead{
+    background: #F4F6F9;
+    border-bottom: 2px solid $greenNeon;
+    -webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 20px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-topright: 20px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+    th{
+      color: $greyDarkFonts;
+      font-weight: 500;
+      padding: 15px 15px;
+      text-align: left;
+    }
+  }
+  tbody{
+    background: white;
+    td{
+      padding: 20px 35px;
+      border-bottom-color: 1px solid purple;
+      color: $greyDarkFonts;
+      border-right: 1px solid $greenNeon;
+      .log{
+        display: inline-block;
+        background: $greenNeon;
+        padding: 10px;
+        border-radius: 50%;
+        margin-right: 15px;
+        color: white;
+      }
+    }
+  }
+}
+.size{
+  font-size: 20px;
+  font-weight: 600;
+}
+} //END CONTENT AREA
