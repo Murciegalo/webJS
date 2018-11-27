@@ -7,51 +7,12 @@ console.log('works?');
   let change = parseFloat(Math.abs(amountDue - amountPaid).toFixed(2));
   console.log(` Due:  £ ${amountDue} - Paid: £ ${amountPaid} - Change:  £ ${change}`);
    //print change on local currency
-   let value, coinName, toReturn;
-   [value ,coinName] = [50, '£50 notes: ',]
-   //Does the change amount contain this bank note?
-   toReturn = Math.floor(change / value);
-   change = (change%value).toFixed(2);
-   toReturn > 0 ? console.log(`${coinName} ${toReturn}`) : '' ;
-   // 20
-   [value, coinName] = [20, '£20 notes: '];
-   //Does the change amount contain this bank note?
-   toReturn = Math.floor(change / value);
-   change= (change%value).toFixed(2);
-   toReturn > 0 ? console.log(`${coinName} ${toReturn}`) : 0 ;
-   // 10
-   [value, coinName] = [10, '£10 notes: '];
-   //Does the change amount contain this bank note?
-   toReturn = Math.floor(change / value);
-   change= (change%value).toFixed(2);
-   toReturn > 0 ? console.log(`${coinName} ${toReturn}`) : 0 ;
-   // COINS
-   // 2
-   [value, coinName] = [2, '£2 coins: '];
-   //Does the change amount contain this bank note?
-   toReturn = Math.floor(change / value);
-   change= (change%value).toFixed(2);
-   toReturn > 0 ? console.log(`${coinName} ${toReturn}`) : 0 ;
-   //1
-   [value, coinName] = [1, '£1 coins: '];
-   //Does the change amount contain this bank note?
-   toReturn = Math.floor(change / value);
-   change= (change%value).toFixed(2);
-   toReturn > 0 ? console.log(`${coinName} ${toReturn}`) : 0 ;
-   //.50
-   [value, coinName] = [.5, '£.50 coins: '];
-   //Does the change amount contain this bank note?
-   toReturn = Math.floor(change / value);
-   change= (change%value).toFixed(2);
-   toReturn > 0 ? console.log(`${coinName} ${toReturn}`) : 0 ;
-   [value, coinName] = [.20, '£.20 coins: '];
-   //Does the change amount contain this bank note?
-   toReturn = Math.floor(change / value);
-   change= (change%value).toFixed(2);
-   toReturn > 0 ? console.log(`${coinName} ${toReturn}`) : 0 ;
-   //.10
-   [value, coinName] = [.10, '£.10 coins: '];
-   //Does the change amount contain this bank note?
-   toReturn = Math.floor(change / value);
-   change = (change%value).toFixed(2);
-   toReturn > 0 ? console.log(`${coinName} ${toReturn}`) : 0 ;
+   const money = [{value: 50, name: '£50 notes: '},
+    {value: 20, name: '£20 notes: '}, {value: 10, name: '£10 notes: '},  {value: 5, name: '£5 notes: '}, {value: 2, name: '£2 coins: '}, {value: 1, name: '£1 coins: '}, {value: .5, name: '£50p coins: '}, {value: .2, name: '£20p coins: '}, {value: .1, name: '£10p coins: '},
+   {value: .05, name: '£5p coins'}];
+    for (let i = 0 ; i < money.length ; i++){
+      //Does the change amount contain this bank note?
+      money[i].return = Math.floor(change / (money[i].value));
+      change = (change%(money[i].value)).toFixed(2);
+      money[i].return > 0 ? console.log(`${money[i].name } ${money[i].return}`) : '' ;
+    }
