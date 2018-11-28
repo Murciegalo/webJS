@@ -9,11 +9,12 @@ const primeChecker = function(arg){
   if(arg <= 1){console.log(`${arg} is not a prime number`);}
   if(Number.isInteger(arg)){
     for(let i = 2; i < arg;  i ++){
+      let counter = 0;
       if(arg%i == 0){
         console.log(`Sorry but ${arg} is not a prime number`);
         break;
       }else{
-        console.log(`Prime number!!`);
+        console.log(`${arg} is a prime number!!`);
       }
     }
   }else {
