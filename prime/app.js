@@ -6,6 +6,7 @@
 let number = parseInt(prompt('Please input a whole number'));
 
 const primeChecker = function(arg){
+  if(arg <= 1){console.log(`${arg} is not a prime number`);}
   if(Number.isInteger(arg)){
     for(let i = 2; i < arg;  i ++){
       if(arg%i == 0){
